@@ -1,0 +1,2 @@
+Metric,Original_System_ms,Optimized_System_ms,Reduction_percent,Weighting
+Mean Synchronization Processing Time,1.6416152348629833,0.29852126303009063,81.81539396745386,Equal weighting of 3 run-level means

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Videostimulation
+Comment=Vehicle speed synchronized video stimulation
+Exec=/bin/bash -lc 'cd "$(dirname "%k")" && ./scripts/start_program.sh'
+Icon=assets/Videostimulation_ICON.png
+Terminal=true
+Categories=AudioVideo;Development;

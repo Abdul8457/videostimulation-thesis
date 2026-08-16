@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.log
+.pytest_cache/
+.venv/
+venv/
+video_controller.log
+mpv*.log
+data/generated_results/
+.DS_Store

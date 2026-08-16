@@ -1,0 +1,159 @@
+VERSION "DNNBNNNYNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/4/%%%/4/'%**4NNN///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+
+BS_:
+
+BU_: PUMA InMotion
+
+
+BO_ 560 P_Time: 4 PUMA
+ SG_ P_Time : 0|32@1+ (0.004,0) [0|17179900] "s"  InMotion
+
+BO_ 32 P_State: 6 PUMA
+ SG_ VhclDir : 38|2@1+ (1,0) [0|3] ""  InMotion
+ SG_ VecCtrlModeActl : 18|6@1+ (1,0) [0|63] ""  InMotion
+ SG_ StartFromZeroActl : 40|1@1+ (1,0) [0|1] ""  InMotion
+ SG_ P_State : 12|4@1+ (1,0) [0|15] ""  InMotion
+ SG_ P_LiveSign : 8|4@1+ (1,0) [0|15] ""  InMotion
+ SG_ P_IsRdy : 16|1@1+ (1,0) [0|1] ""  InMotion
+ SG_ P_InfoCode : 24|14@1+ (1,0) [0|16383] ""  InMotion
+ SG_ EmcCtrlMode : 0|8@1+ (1,0) [0|255] ""  InMotion
+ SG_ ActvRqst : 17|1@1+ (1,0) [0|1] ""  InMotion
+
+BO_ 550 P_Kin4: 6 PUMA
+ SG_ Whl4_FxSet4Sim : 24|24@1+ (0.003577,-30000) [-30000|30012.1] "N"  InMotion
+ SG_ Whl4_CdVxActl : 0|24@1+ (6.6E-06,-10) [-10|100.73] "m/s"  InMotion
+
+BO_ 548 P_Kin3: 6 PUMA
+ SG_ Whl3_FxSet4Sim : 24|24@1+ (0.003577,-30000) [-30000|30012.1] "N"  InMotion
+ SG_ Whl3_CdVxActl : 0|24@1+ (6.6E-06,-10) [-10|100.73] "m/s"  InMotion
+
+BO_ 546 P_Kin2: 6 PUMA
+ SG_ Whl2_FxSet4Sim : 24|24@1+ (0.003577,-30000) [-30000|30012.1] "N"  InMotion
+ SG_ Whl2_CdVxActl : 0|24@1+ (6.6E-06,-10) [-10|100.73] "m/s"  InMotion
+
+BO_ 544 P_Kin1: 6 PUMA
+ SG_ Whl1_FxSet4Sim : 24|24@1+ (0.003577,-30000) [-30000|30012.1] "N"  InMotion
+ SG_ Whl1_CdVxActl : 0|24@1+ (6.6E-06,-10) [-10|100.73] "m/s"  InMotion
+
+BO_ 512 P_Kin: 4 PUMA
+ SG_ Whl4_DynSpdLimRchd : 30|2@1- (1,0) [-2|1] ""  InMotion
+ SG_ Whl3_DynSpdLimRchd : 28|2@1- (1,0) [-2|1] ""  InMotion
+ SG_ Whl2_DynSpdLimRchd : 26|2@1- (1,0) [-2|1] ""  InMotion
+ SG_ Whl1_DynSpdLimRchd : 24|2@1- (1,0) [-2|1] ""  InMotion
+ SG_ EngSpdActl : 0|24@1- (0.00195313,0) [-16384|16384] "rpm"  InMotion
+
+BO_ 576 P_Info: 3 PUMA
+ SG_ P_SubID : 16|6@1+ (1,0) [0|63] ""  InMotion
+ SG_ P_RevID : 10|6@1+ (1,0) [0|63] ""  InMotion
+ SG_ P_ComID : 0|10@1+ (1,0) [0|1023] ""  InMotion
+
+BO_ 592 P_Event1: 8 PUMA
+ SG_ P_1ParamInt16 : 16|16@1+ (1,0) [0|65535] ""  InMotion
+ SG_ P_1ParamFloat : 32|32@1- (1,0) [-3.4E+38|3.4E+38] ""  InMotion
+ SG_ P_1EventID : 0|10@1+ (1,0) [0|1023] ""  InMotion
+ SG_ P_1Bitmask : 10|6@1+ (1,0) [0|63] ""  InMotion
+
+BO_ 528 P_Drv: 6 PUMA
+ SG_ ShiftInProcess : 38|1@1+ (1,0) [0|1] ""  InMotion
+ SG_ ShiftFailure : 39|1@1+ (1,0) [0|1] ""  InMotion
+ SG_ GearShifterActl : 40|8@1- (1,0) [-128|127] ""  InMotion
+ SG_ GearNoActl : 32|6@1- (1,0) [-32|31] ""  InMotion
+ SG_ GasActl : 16|16@1+ (0.001832,-10) [-10|110.06] "%"  InMotion
+ SG_ ClutchActl : 0|16@1+ (0.001832,-10) [-10|110.06] "%"  InMotion
+
+BO_ 304 IM_Time: 4 InMotion
+ SG_ IM_Time : 0|32@1+ (0.004,0) [0|17179900] "s"  PUMA
+
+BO_ 16 IM_State: 3 InMotion
+ SG_ VecCtrlModeSet : 16|6@1+ (1,0) [0|63] ""  PUMA
+ SG_ StartFromZeroSet : 22|1@1+ (1,0) [0|1] ""  PUMA
+ SG_ Rqst4IM_ActvRqst : 6|1@1+ (1,0) [0|1] ""  PUMA
+ SG_ IM_State : 0|6@1+ (1,0) [0|63] ""  PUMA
+ SG_ IM_LiveSign : 8|4@1+ (1,0) [0|15] ""  PUMA
+ SG_ IM_IsRdy : 12|1@1+ (1,0) [0|1] ""  PUMA
+ SG_ IM_IsActv : 7|1@1+ (1,0) [0|1] ""  PUMA
+
+BO_ 292 IM_Kin2: 8 InMotion
+ SG_ Whl4_CdVxSet : 24|24@1+ (6.6E-06,-10) [-10|100] "m/s"  PUMA
+ SG_ Whl3_CdVxSet : 0|24@1+ (6.6E-06,-10) [-10|100] "m/s"  PUMA
+ SG_ Axle2_RGSet : 48|16@1+ (0.003052,-100) [-100|100.013] "%"  PUMA
+
+BO_ 288 IM_Kin1: 8 InMotion
+ SG_ Whl2_CdVxSet : 24|24@1+ (6.6E-06,-10) [-10|100.73] "m/s"  PUMA
+ SG_ Whl1_CdVxSet : 0|24@1+ (6.6E-06,-10) [-10|100.73] "m/s"  PUMA
+ SG_ Axle1_RGSet : 48|16@1+ (0.003052,-100) [-100|100.013] "%"  PUMA
+
+BO_ 320 IM_Info: 3 InMotion
+ SG_ IM_SubID : 16|6@1+ (1,0) [0|63] ""  PUMA
+ SG_ IM_RevID : 10|6@1+ (1,0) [0|63] ""  PUMA
+ SG_ IM_ComID : 0|10@1+ (1,0) [0|1023] ""  PUMA
+
+
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","spontan","cyclicIfActive","spontanWithDelay","cyclicAndSpontan","cyclicAndSpontanWithDelay","spontanWithRepitition","cyclicIfActiveAndSpontanWD","cyclicIfActiveFast","cyclicWithRepeatOnDemand","none";
+BA_DEF_  "GenCompany" STRING ;
+BA_DEF_  "GenDescription" STRING ;
+BA_DEF_  "GenNetworkBaudrate" STRING ;
+BA_DEF_  "GenAuthor" STRING ;
+BA_DEF_  "GenRevision" STRING ;
+BA_DEF_  "GenRevisionDate" STRING ;
+BA_DEF_ BO_  "GenMsgNrOfRepetitions" INT 0 999999;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 10000;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 10000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenMsgSendType" "cyclic";
+BA_DEF_DEF_  "GenCompany" "";
+BA_DEF_DEF_  "GenDescription" "";
+BA_DEF_DEF_  "GenNetworkBaudrate" "";
+BA_DEF_DEF_  "GenAuthor" "";
+BA_DEF_DEF_  "GenRevision" "";
+BA_DEF_DEF_  "GenRevisionDate" "";
+BA_DEF_DEF_  "GenMsgNrOfRepetitions" 1;
+BA_DEF_DEF_  "GenMsgDelayTime" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 10;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "GenCompany" "AVL List GmbH";
+BA_ "GenDescription" "Interface to Vehicle Testbed";
+BA_ "GenNetworkBaudrate" "1000000";
+BA_ "GenAuthor" "Barbara Wallner";
+BA_ "GenRevision" "1.1";
+BA_ "GenRevisionDate" "2011-04-20";
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 560 4;
+BA_ "GenMsgCycleTime" BO_ 32 4;
+BA_ "GenMsgCycleTime" BO_ 550 1;
+BA_ "GenMsgCycleTime" BO_ 548 1;
+BA_ "GenMsgCycleTime" BO_ 546 1;
+BA_ "GenMsgCycleTime" BO_ 544 1;
+BA_ "GenMsgCycleTime" BO_ 512 1;
+BA_ "GenMsgCycleTime" BO_ 576 1000;
+BA_ "GenMsgCycleTime" BO_ 592 20;
+BA_ "GenMsgCycleTime" BO_ 528 4;
+BA_ "GenMsgCycleTime" BO_ 304 20;
+BA_ "GenMsgCycleTime" BO_ 16 10;
+BA_ "GenMsgCycleTime" BO_ 292 1;
+BA_ "GenMsgCycleTime" BO_ 288 1;
+BA_ "GenMsgCycleTime" BO_ 320 1000;
+SIG_VALTYPE_ 592 P_1ParamFloat : 1;
